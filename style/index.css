@@ -54,3 +54,12 @@ body{
     color: #4f4f4f;
     line-height: 1.5;    
 }
+/* image next to h1 */
+.top-img{
+    background-image: url('../images/placeholder.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40vh;
+    background-position: center;
+}
