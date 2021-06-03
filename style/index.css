@@ -54,6 +54,13 @@ body{
     color: #4f4f4f;
     line-height: 1.5;    
 }
+/* Header */
+h1{
+    font-size:5rem;
+    margin-left:2%;
+    margin-top:5%;
+}
+
 /* image next to h1 */
 .top-img{
     background-image: url('../images/placeholder.png');
@@ -62,4 +69,35 @@ body{
     background-attachment: fixed;
     height: 40vh;
     background-position: center;
+}
+
+header, footer{
+    background-color: #FFD8D8;
+}
+
+.link{
+    display:flex;
+    width:40%;
+    justify-content: space-around;
+    margin: 1% 0;
+    margin-left:2%;
+    
+}
+
+.link a, .projects-button, .contact-button{
+    text-align: center;
+    text-decoration: none;
+    color: #4f4f4f;
+    background-color: #fff;
+}
+
+.link a{
+    width: 20%;
+    
+}
+
+.link a:hover, .projects-button:hover, .contact-button:hover{
+    transition: 0.5s;
+    color: #fff;
+    background-color: #000;
 }
