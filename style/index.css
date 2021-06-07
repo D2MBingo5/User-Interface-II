@@ -42,7 +42,7 @@ table {
     margin:0;
     padding:0;
     max-width: 100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 /* general styles */
 html{
@@ -99,9 +99,9 @@ h1{
 }
 
 .projects-button{
-    width:20%;
-    margin: 1% 0;
-    margin-left:40%;
+    width:40%;
+    margin: 1% auto;
+    /* margin-left:40%; */
 }
 
 /* Project Array */
@@ -175,4 +175,23 @@ header, footer{
 #footer nav{
     padding: 0.2% 1% 5%;
     margin-top: 5%;
+}
+
+
+/* If the screen is smaller than 800px, apply these styles */
+@media(max-width: 800px){
+.link{
+    width: 70%;
+}
+.top-img img{
+    width: 70%;
+}
+.projects-button{
+    width: 60%
+}
+}
+
+/* If the screen is smaller than 500px, apply these styles */
+@media(max-width: 500px){
+
 }
