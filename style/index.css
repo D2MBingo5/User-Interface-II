@@ -55,6 +55,14 @@ body{
     line-height: 1.5;    
 }
 /* Header */
+header nav{
+    display:flex;
+    flex-flow: row wrap;  
+}
+.header-div{
+    width: 100%;
+}
+
 h1{
     font-size:5rem;
     padding-left:2%;
@@ -180,18 +188,46 @@ header, footer{
 
 /* If the screen is smaller than 800px, apply these styles */
 @media(max-width: 800px){
-.link{
-    width: 70%;
-}
-.top-img img{
-    width: 70%;
-}
-.projects-button{
-    width: 60%
-}
+    .link{
+        width: 70%;
+    }
+    .top-img img{
+        width: 70%;
+    }
+    .projects-button{
+        width: 60%
+    }
 }
 
 /* If the screen is smaller than 500px, apply these styles */
 @media(max-width: 500px){
-
+    header nav{
+        justify-content: center;
+    }
+    .header-div{
+        text-align: center;
+    }
+    .link{
+        flex-flow:column wrap;
+    }
+    .link a{
+        width: 50%;
+        margin: 1% auto;
+    }
+    .top{
+        flex-flow: column wrap;
+    }
+    .top-img{
+        width:70%;
+    
+    }
+    
+    .top-img img{
+      width: 70%;
+    }
+    
+    .text{
+        width:70%;
+    }
+    
 }
